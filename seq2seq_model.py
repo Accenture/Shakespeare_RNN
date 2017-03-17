@@ -201,8 +201,7 @@ class Seq2SeqModel(object):
             self.gradient_norms = []
             self.updates = []
             # opt = tf.train.GradientDescentOptimizer(self.learning_rate)
-            # opt = tf.train.AdagradOptimizer(self.learning_rate)
-            opt = tf.train.AdamOptimizer()
+            opt = tf.train.AdagradOptimizer(self.learning_rate)
             for b in xrange(len(buckets)):
                 gradients = tf.gradients(self.losses[b], params)
                 clipped_gradients, norm = tf.clip_by_global_norm(
