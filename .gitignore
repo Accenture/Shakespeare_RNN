@@ -95,3 +95,6 @@ ENV/
 
 # IDEA
 .idea/
+
+# Train Data
+train_2/
