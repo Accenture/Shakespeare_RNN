@@ -96,5 +96,8 @@ ENV/
 # IDEA
 .idea/
 
+# Workspace build file
+WORKSPACE
+
 # Train Data
 train_2/
